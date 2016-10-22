@@ -5,7 +5,5 @@ package hd.control_care;
  */
 public class conexionBD {
 
-    //1
-    //a
 
 }
