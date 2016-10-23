@@ -63,27 +63,30 @@
                 android:textAlignment="center"
                 android:textColor="@android:color/black" />
 
+
+            <Button
+                android:id="@+id/btn_fecha_regla"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Fecha Ult. Regla"
+                android:textAlignment="center"
+                />
+
             <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="20dp"></FrameLayout>
-
-            <EditText
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/input_fecha_regla"
-                android:hint="Fecha Ult. Regla"
-                android:textSize="25dp"
-                android:textAlignment="center" />
 
             <Button
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Registrar"
-                android:id="@+id/btn_registrarPeso" />
+                android:id="@+id/btn_registrarUsuario" />
 
         </TableLayout>
 
     </ScrollView>
+
+
 
 </LinearLayout>

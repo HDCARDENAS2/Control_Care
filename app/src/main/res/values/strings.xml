@@ -1,3 +1,5 @@
 <resources>
-    <string name="app_name">Control_Care</string>
+    <string name="app_name">Control Care</string>
+    <string name="abrir">open</string>
+    <string name="cerrar">close</string>
 </resources>
