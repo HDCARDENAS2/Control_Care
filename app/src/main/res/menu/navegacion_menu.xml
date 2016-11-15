@@ -13,10 +13,6 @@
             android:title="Control de peso"
             />
 
-        <item android:id="@+id/contraciones"
-            android:title="Concetraciones"
-            />
-
         <item android:id="@+id/citas"
             android:title="Citas "
             />
@@ -24,9 +20,6 @@
         <item android:id="@+id/config"
             android:title="Configuracion "
             />
-
-
-
 
     </group>
 </menu>

@@ -8,6 +8,7 @@ import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.LinearLayout;
 import android.widget.Toast;
@@ -49,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             ly = (LinearLayout) findViewById(R.id.content_layout);
             crear_fragment(null,new GestorSemana());
 
+            DatosTemporales.setFecha(list_usuario.get(0).getFecha_ultima_regla());
+
         }
 
     }
@@ -71,8 +74,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return crear_fragment(item,new GestorSemana());
             case R.id.control_peso:
                 return crear_fragment(item,new Gestorpeso());
-            case R.id.contraciones:
-                return crear_fragment(item,new GestorContracciones());
             case R.id.citas:
                 return crear_fragment(item,new GestorCita());
         }
