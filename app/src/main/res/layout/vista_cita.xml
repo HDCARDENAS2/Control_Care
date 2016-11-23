@@ -3,49 +3,65 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
+    <TableLayout
+        android:orientation="vertical" android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <TableLayout
-            android:orientation="vertical" android:layout_width="match_parent"
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"></FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Control de Citas"
+            android:id="@+id/tv_controlCitaTitulo"
+            android:textAlignment="center" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"></FrameLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/btn_fecha_cita"
+            android:textAlignment="center"
+            android:elegantTextHeight="false"
+            android:text="Fecha de la cita" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/btn_hora_cita"
+            android:textAlignment="center"
+            android:elegantTextHeight="false"
+            android:text="Hora de la cita" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/input_observaciones"
+            android:textAlignment="center"
+            android:elegantTextHeight="false"
+            android:hint="Observaciones" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registrar"
+            android:id="@+id/btn_registrarCita" />
+
+        <ListView android:id="@+id/lista_cita"
+            android:layout_width="match_parent"
             android:layout_height="match_parent">
+        </ListView>
 
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="30dp"></FrameLayout>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:text="Control de Citas"
-                android:id="@+id/tv_controlCitaTitulo"
-                android:textAlignment="center" />
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="40dp"></FrameLayout>
-
-            <DigitalClock
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceLarge"
-                android:id="@+id/digitalClock"
-                android:textSize="60dp"
-                android:textAlignment="center"
-                android:editable="true"
-                android:elegantTextHeight="false" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Registrar"
-                android:id="@+id/btn_registrarCita" />
-
-        </TableLayout>
-
-    </ScrollView>
+    </TableLayout>
 
 </LinearLayout>

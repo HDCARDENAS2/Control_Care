@@ -10,7 +10,7 @@ import android.util.Log;
  */
 public class BDConexion extends SQLiteOpenHelper {
 
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
     private static final String DATABASE_NAME = "control_care";
 
     public BDConexion(Context context) {
@@ -24,6 +24,7 @@ public class BDConexion extends SQLiteOpenHelper {
                 "  id integer primary key autoincrement," +
                 "  fecha_cita TEXT NOT NULL," +
                 "  fecha_creacion TEXT NOT NULL," +
+                "  hora_cita TEXT NOT NULL, "+
                 "  observacion TEXT NOT NULL" +
                 "); ";
         db.execSQL(sql);
